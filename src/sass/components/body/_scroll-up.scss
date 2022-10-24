@@ -1,0 +1,28 @@
+.back-to-top {
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    z-index: 15;
+    background-color: var(--footer-bg);
+    border: transparent;
+    border-radius: 50%;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    @include mq(mobile) {
+        right: 45px;
+        bottom: 45px;
+      }
+}
+.back-to-top:hover {
+    background-color: var(--btn-rating-bg);
+}
+.scrollup__icon {
+    fill: var(--btn-rating-bg);
+    
+}
+.scrollup__icon:hover {
+    fill: var(--footer-bg);
+}
+.back-to-top:hover .scrollup__icon {
+    fill: var(--footer-bg);
+}
